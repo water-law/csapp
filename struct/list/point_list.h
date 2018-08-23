@@ -18,5 +18,5 @@ int ListLength(List L);  // 表长度
 ListItem ListRetrieve(int k, List L);  // 取出表第 k 个元素
 int ListLocate(ListItem x, List L);  // 获取元素 x 在表中的位置
 void ListInsert(int k, ListItem x, List L);  // 往表位置 k 插入元素 x
-List ListDelete(int k, List L);  // 删除表位置 k 的元素
+ListItem ListDelete(int k, List L);  // 删除表位置 k 的元素
 void PrintList(List L);  // 打印表

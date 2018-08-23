@@ -1,6 +1,7 @@
-#include "array_list.h"
 #include <stdlib.h>
 #include <stdio.h>
+#include "array_list.h"
+
 List ListInit(int size) {
 	List L = malloc(sizeof(List));
 	L->table = malloc(size*sizeof(ListItem));
@@ -56,7 +57,7 @@ void PrintList(List L) {
 	int i;
 	for (i = 0; i < L->n;i++) printf("%d\n", L->table[i]);
 }
-int main (int argc, char** argv) {
+int main (int argc, char const *argv[]) {
 	List L = ListInit(12);
 	ListInsert(0, 12, L);
 	ListInsert(1, 2323, L);
