@@ -85,7 +85,7 @@ ListItem ListDelete(int k, List L) {
     int i = 1;
     ListItem x;
     link p, q;
-    if (k < 1 || L->first) {
+    if (k < 1 || !L->first) {
         perror("out of bounds");
     }
     p = L->first;
