@@ -4,7 +4,7 @@
 
 int pattern(char *source, char *target) {
     int s_len = strlen(source), t_len = strlen(target);
-    printf("source str length is %d\ntarget str len is %d\n", s_len, t_len);
+    printf("source str length is %d\ntarget str length is %d\n", s_len, t_len);
 //    int eq = (source[s_len] == '\0');
 //    printf("%d\n", eq);
     if (s_len < t_len) {
@@ -22,7 +22,6 @@ int pattern(char *source, char *target) {
         int j;
         for (j = 0; j < t_len; j++) {
             if (source[i+j] != target[j]) {
-            // 存在k, 使得 target[0 ~ k-1] == source[i+j-k ~ i+j-1]
                 break;
             }
         }
