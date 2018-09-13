@@ -11,15 +11,14 @@
  * Created on May 13, 2018, 2:36 PM
  */
 
-#include <cstdlib>
+#include <stdlib.h>
 #include <stdio.h>
-using namespace std;
 
 /*
  * 
  */
 int main(int argc, char** argv) {
-    int a = 0xffffffff;
+    unsigned long a = 0xffffffff;
     printf("0x%x\n", a); // 0x1111 0001
     a = a << 32;
     printf("0x%x\n", a); // 0x0011 1100

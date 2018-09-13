@@ -1,9 +1,7 @@
-#include <cstdlib>
+#include <stdlib.h>
 #include <math.h>
 #include <stdio.h>
 #include <string.h>
-
-using namespace std;
 
 
 typedef unsigned char *byte_pointer;
@@ -31,10 +29,10 @@ void show_pointer(void *x) {
 }
 
 
-//int main(int argc, char** argv) {
-//    
-//    const char *s = "abcdef";
-//    show_bytes((byte_pointer)s, strlen(s));
-//    return 0;
-//}
+int main(int argc, char** argv) {
+
+    const char *s = "abcdef";
+    show_bytes((byte_pointer)s, strlen(s));
+    return 0;
+}
 
