@@ -28,4 +28,4 @@ start: start.c
 	$(CC) $(CFLAGS) -o start start.c
 
 clean:
-	rm -f *.o $(PROG)
+	rm -f *.o *.exe $(PROG)
